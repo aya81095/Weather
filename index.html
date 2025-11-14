@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-cloud-sun"></i>
+          <div>
+            <div>Weather</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <div class="container">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Find your location..."
+          />
+          <button class="search-btn">Find</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weather Cards -->
+    <div class="weather-cards">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Main Card - Wednesday -->
+          <div class="col-lg-4 col-md-6">
+            <div class="weather-card main-card">
+              <div class="card-header">
+                <div>
+                  <div class="day-name" id="day-name">Wednesday</div>
+                  <div class="date" id="day-date">12 November</div>
+                </div>
+              </div>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="current-location">Cairo</span>
+              </div>
+              <div class="main-temp" id="main-temp">22.3°C</div>
+              <div class="weather-icon">
+                <img src="" id="current-icon" alt="" />
+              </div>
+              <div class="weather-status" id="current-weather-status">
+                Clear
+              </div>
+              <div class="weather-details">
+                <div class="detail-item">
+                  <i class="fas fa-tint"></i>
+                  <span id="fa-tint">20%</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-wind"></i>
+                  <span id="fa-wind">18km/h</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-compass"></i>
+                  <span id="fa-compass">East</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thursday Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="weather-card">
+              <div class="card-header">
+                <div>
+                  <div class="day-name" id="second-day-name">Thursday</div>
+                </div>
+              </div>
+              <div class="temp" id="second-day-temp">26.3°C</div>
+              <div class="small-weather-icon">
+                <img src="" id="second-day-icon" alt="" />
+              </div>
+              <div class="temp-range" id="second-day-range">18.2°</div>
+              <div class="weather-status" id="second-day-status">Sunny</div>
+            </div>
+          </div>
+
+          <!-- Friday Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="weather-card">
+              <div class="card-header">
+                <div>
+                  <div class="day-name" id="third-day-name">Friday</div>
+                </div>
+              </div>
+              <div class="temp" id="third-day-temp">25.3°C</div>
+              <div class="small-weather-icon">
+                <img src="" id="third-day-icon" alt="" />
+              </div>
+              <div class="temp-range" id="third-day-range">17.3°</div>
+              <div class="weather-status" id="third-day-status">Sunny</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="subscribe-section text-center">
+          <input
+            type="email"
+            class="subscribe-input"
+            placeholder="Enter your email to subscribe..."
+          />
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <div class="social-icons">
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="copyright">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
